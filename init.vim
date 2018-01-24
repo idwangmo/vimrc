@@ -86,3 +86,8 @@ let mapleader = "\<Space>"
 " YouCompleteMe配置
 source $HOME/.vim/config/YouCompleteMe.vim
 
+" ale配置
+source $HOME/.vim/config/ale.vim
+
+" 背景颜色配置
+colorscheme onedark
