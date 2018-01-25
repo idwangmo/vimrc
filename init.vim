@@ -44,7 +44,6 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-
 Plug 'junegunn/vim-easy-align'  " 等号对齐
 Plug 'luochen1990/rainbow'  " 高亮括号
 Plug 'ntpeters/vim-better-whitespace'  " 去除多余括号
-Plug 'ervandew/supertab'  " 增强tab
 Plug 'scrooloose/nerdcommenter'  " 代码注释
 Plug 'ryanoasis/vim-devicons'  " Vim Dev Icons
 
@@ -72,19 +71,74 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'ekalinin/dockerfile.vim'
 
 "" markdown
-Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown', {'on_ft' : 'markdown'}
 
 call plug#end()
+
+" *****************************
+" vim basic config
+" *****************************
+" 显示行号
+set number
+
+" GUI环境下设置
+if has("gui_running")
+  set guifont=Source\ Code\ Pro\ 15
+endif
+
+" 高亮设置
+set background=dark 
+set t_Co=256
+set cursorline
+" set cursorcolumn
+
+" 文件编码
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set bomb
+set binary
+
+" 搜索设置
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" 目录和缓存
+set nobackup
+set noswapfile
+
+" 语法设置
+syntax on
+set ruler
+set number
+
+" 使用鼠标
+set mouse=a
+
+" 文件类型
+set fileformats=unix,dos,mac
 
 " Required:
 filetype plugin indent on
 
+" 编辑vimrc的时候自动刷新
+autocmd! bufwritepost .vimrc source ~/.vimrc
+
+" 重新绘制
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+
+" 禁用警报
+set noerrorbells
+set novisualbell
+set t_vb=
+
 " *****************************
 " vim config
 " *****************************
-" <Leader> key set
+" <Leader>的设置
 let mapleader = "\<Space>"
-
 
 " YouCompleteMe配置
 source $HOME/.vim/config/YouCompleteMe.vim
@@ -94,9 +148,6 @@ source $HOME/.vim/config/ale.vim
 
 " 背景颜色配置
 colorscheme onedark
-
-" supertab配置
-source $HOME/.vim/config/supertab.vim
 
 " nerdtree配置
 source $HOME/.vim/config/nerdtree.vim
@@ -113,5 +164,11 @@ source $HOME/.vim/config/mapping.vim
 " Python配置
 source $HOME/.vim/config/python.vim
 
+" html和js的配置
+source $HOME/.vim/config/html.vim
+
+" Markdown的配置
+source ~/.vim/config/Markdown.vim
+
 " 其他配置
-source $HOME/.vim/config/customer.vim
+ source $HOME/.vim/config/customer.vim

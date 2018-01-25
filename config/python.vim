@@ -6,24 +6,15 @@ augroup vimrc-python
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
 
-" syntastic
+" 语法检测
 let g:syntastic_python_checkers=['python', 'flake8']
 
-" vim-airline
-let g:airline#extensions#virtualenv#enabled = 1
-
-" Syntax highlight
-" Default highlight is better than polyglot
+" 语法高亮(听说默认的更好)
 let g:polyglot_disabled = ['python']
-let python_highlight_all = 1
 
-" *****************************
-" yapf config
-" *****************************
+" yapf的设置
 map <Leader>y :call yapf#YAPF()<cr>
 
-" *****************************
-" vim isort config
-" *****************************
-let g:vim_isort_map = '<Leader>is'
+" isort的设置
+let g:vim_isort_map = '<Leader>s'
 let g:vim_isort_python_version = 'python3'

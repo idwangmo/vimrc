@@ -18,7 +18,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
 
 " snippets
-let g:UltiSnipsExpandTrigger="<c-n>"
+let g:UltiSnipsExpandTrigger="<c-c>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsEditSplit="vertical"

@@ -4,19 +4,12 @@ let g:ycm_server_python_interpreter = '/usr/bin/python3'
 
 " 补全
 set completeopt=longest,menu  " 下拉的补全菜单
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif " 离开插入模式后关闭预览
 
 " 回车选中当前项
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+let g:ycm_key_list_stop_completion = ['<CR>']
 
 " 键位
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-"youcompleteme  默认tab  s-tab 和自动补全冲突
-"let g:ycm_key_list_select_completion=['<c-n>']
-let g:ycm_key_list_select_completion = ['<Down>']
-"let g:ycm_key_list_previous_completion=['<c-p>']
-let g:ycm_key_list_previous_completion = ['<Up>']
 
 " 配置
 let g:ycm_collect_identifiers_from_tags_files = 1  " 基于标签的引擎
@@ -48,10 +41,6 @@ call s:set_ft_triggers('java,jsp', ['.'], 0)
 call s:set_ft_triggers('vim', ['re![_a-zA-Z]+[_\w]*\.'], 0)
 call s:set_ft_triggers('sh', ['re![\w-]{2}', '/', '-'], 0)
 call s:set_ft_triggers('zsh', ['re![\w-]{2}', '/', '-'], 0)
-
-" YCM的错误标示,如果有ultisnips则不使用
-let g:ycm_error_symbol="✖"
-let g:ycm_warning_symbol="➤"
 
 " 自动关闭窗口
 let g:ycm_autoclose_preview_window_after_completion = 1
