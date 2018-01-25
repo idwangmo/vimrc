@@ -1,7 +1,7 @@
 " 图标
 let g:ale_sign_error='✖'
 let g:ale_sign_warning='➤'
-let g:ale_sign_info='⚡'
+let g:ale_sign_info='⚠'
 
 " 信息格式
 let g:ale_echo_msg_format = '%severity%: %linter%: %s'

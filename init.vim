@@ -91,3 +91,24 @@ source $HOME/.vim/config/ale.vim
 
 " 背景颜色配置
 colorscheme onedark
+
+" supertab配置
+source $HOME/.vim/config/supertab.vim
+
+" nerdtree配置
+source $HOME/.vim/config/nerdtree.vim
+
+" tagbar配置
+source $HOME/.vim/config/tagbar.vim
+
+" vim-airline 配置
+source $HOME/.vim/config/vim-airline.vim
+
+" 键位映射设置
+source $HOME/.vim/config/mapping.vim
+
+" Python配置
+source $HOME/.vim/config/python.vim
+
+" 其他配置
+source $HOME/.vim/config/customer.vim
