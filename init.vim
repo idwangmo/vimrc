@@ -71,6 +71,9 @@ Plug 'jelera/vim-javascript-syntax'
 "" docker
 Plug 'ekalinin/dockerfile.vim'
 
+"" markdown
+Plug 'plasticboy/vim-markdown'
+
 call plug#end()
 
 " Required:

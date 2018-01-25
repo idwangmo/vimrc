@@ -87,3 +87,10 @@ let g:indent_guides_start_level = 1
 let g:indent_guides_size = 1
 :nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 
+" *********************
+" markdown setting
+" *********************
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_math = 1
+let g:vim_markdown_autowrite = 1
+let g:vim_markdown_folding_disabled = 1
