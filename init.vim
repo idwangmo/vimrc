@@ -68,7 +68,7 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'jelera/vim-javascript-syntax'
 
 "" docker
-Plug 'ekalinin/dockerfile.vim'
+" Plug 'ekalinin/dockerfile.vim'
 
 "" markdown
 Plug 'plasticboy/vim-markdown', {'on_ft' : 'markdown'}
@@ -87,7 +87,7 @@ if has("gui_running")
 endif
 
 " 高亮设置
-set background=dark 
+set background=dark
 set t_Co=256
 set cursorline
 " set cursorcolumn

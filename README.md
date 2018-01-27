@@ -26,4 +26,10 @@ Ctrl+c | 补全模板
 \<Leader>ea | 对齐
 \<Leader>d | indent
 
+## 附注
+
+使用了Youcomplete，所以得做两件事情：
+
+1. 复制`.ycm_extra_conf.py`到用户目录下
+2. 创建一个空的`.tern_project`文件
 
