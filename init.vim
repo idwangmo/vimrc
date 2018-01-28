@@ -23,9 +23,9 @@ endif
 " Required:
 call plug#begin(expand('~/.vim/plugged'))
 
-"*****************************************************************************
+"***********************
 "" Plug install packages
-"*****************************************************************************
+"***********************
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -67,8 +67,8 @@ Plug 'mattn/emmet-vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jelera/vim-javascript-syntax'
 
-"" docker
-" Plug 'ekalinin/dockerfile.vim'
+"" fcitx
+Plug 'lilydjwg/fcitx.vim'
 
 "" markdown
 Plug 'plasticboy/vim-markdown', {'on_ft' : 'markdown'}
@@ -123,9 +123,6 @@ set fileformats=unix,dos,mac
 " Required:
 filetype plugin indent on
 
-" 编辑vimrc的时候自动刷新
-autocmd! bufwritepost .vimrc source ~/.vimrc
-
 " 重新绘制
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 
@@ -171,4 +168,5 @@ source $HOME/.vim/config/html.vim
 source ~/.vim/config/Markdown.vim
 
 " 其他配置
- source $HOME/.vim/config/customer.vim
+source $HOME/.vim/config/customer.vim
+
