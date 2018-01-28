@@ -30,6 +30,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'  " git历史
 Plug 'jiangmiao/auto-pairs' " 自动补全括号
 Plug 'majutsushi/tagbar'  " 代码组成
@@ -144,7 +145,9 @@ source $HOME/.vim/config/YouCompleteMe.vim
 source $HOME/.vim/config/ale.vim
 
 " 背景颜色配置
-colorscheme onedark
+set background=dark
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 
 " nerdtree配置
 source $HOME/.vim/config/nerdtree.vim
