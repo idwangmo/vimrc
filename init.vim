@@ -3,6 +3,7 @@
 "**********************
 if has('vim_starting')
   set nocompatible  " 关闭兼容模式
+  set wildmenu
 endif
 
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
@@ -28,9 +29,6 @@ call plug#begin(expand('~/.vim/plugged'))
 "***********************
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'  " git历史
 Plug 'jiangmiao/auto-pairs' " 自动补全括号
 Plug 'majutsushi/tagbar'  " 代码组成
@@ -38,7 +36,6 @@ Plug 'w0rp/ale'  " 语法检测
 Plug 'Yggdroot/indentLine' " 对齐线
 Plug 'sheerun/vim-polyglot'  " 语言集合
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'  " 文件查找
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'haya14busa/incsearch.vim'  " 高亮搜索内容
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --go-completer  --js-completer --rust-completer' }
@@ -47,6 +44,15 @@ Plug 'luochen1990/rainbow'  " 高亮括号
 Plug 'ntpeters/vim-better-whitespace'  " 去除多余括号
 Plug 'scrooloose/nerdcommenter'  " 代码注释
 Plug 'ryanoasis/vim-devicons'  " Vim Dev Icons
+
+" themes
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
+
+" fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "" Snippets
 Plug 'SirVer/ultisnips'

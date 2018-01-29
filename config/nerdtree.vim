@@ -24,3 +24,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 " 取消多余提示
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
+" 显示隐藏文件
+let g:NERDTreeShowHidden = 1
