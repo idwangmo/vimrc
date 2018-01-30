@@ -74,6 +74,9 @@ Plug 'mattn/emmet-vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'jelera/vim-javascript-syntax'
 
+" vue
+" Plug 'posva/vim-vue'
+
 "" fcitx
 Plug 'lilydjwg/fcitx.vim'
 

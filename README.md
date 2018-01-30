@@ -26,6 +26,7 @@ Ctrl+c | 补全模板
 \<Leader>gr | 移除文件
 \<Leader>ea | 对齐
 \<Leader>d | indent
+Ctrl+y | Emment的补全键位
 
 ## 附注
 
