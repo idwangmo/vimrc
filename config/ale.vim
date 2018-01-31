@@ -22,3 +22,6 @@ if current_scheme == 'gruvbox'
   highlight link ALEWarningSign GruvboxYellowSign
 endif
 
+" 自定义linter
+let g:ale_linters = {'python': ['flake8']}
+
