@@ -41,3 +41,9 @@ Ctrl+y | Emment的补全键位
 2. flake8
 3. fzf
 
+### Mac的环境
+
+1. 在Mac上面使用，请注意键位
+2. 需要下载nerd-font
+
+

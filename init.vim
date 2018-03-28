@@ -4,6 +4,7 @@
 if has('vim_starting')
   set nocompatible  " 关闭兼容模式
   set wildmenu
+  set backspace=2  " mac上的删除键位
 endif
 
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
@@ -38,7 +39,7 @@ Plug 'sheerun/vim-polyglot'  " 语言集合
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'haya14busa/incsearch.vim'  " 高亮搜索内容
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang --go-completer  --js-completer --rust-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer --system-libclang --go-completer  --js-completer --rust-completer' }
 Plug 'junegunn/vim-easy-align'  " 等号对齐
 Plug 'luochen1990/rainbow'  " 高亮括号
 Plug 'ntpeters/vim-better-whitespace'  " 去除多余括号
