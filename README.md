@@ -1,6 +1,12 @@
 # Vim配置
 
-一个简单的vim配置
+此配置使用的[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)作为补全的
+后端，最近我用lsp重新更新了我的vim的配置，并且吸收了
+[MaskRay](https://github.com/MaskRay/Config/tree/master/home)
+的配置管理思想，将我的配置移动到了我的
+[dotfiles](https://github.com/idwangmo/dotfiles)
+配置仓库中，此镜像我将不再维护。
+
 
 ## 键位配置
 
